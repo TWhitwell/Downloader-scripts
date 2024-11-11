@@ -17,11 +17,11 @@ creds = pickle.load(open(pickle_path, 'rb'))
 service = googleapiclient.discovery.build('gmail', 'v1', credentials=creds)
 
 # Create a message
-my_email = 'thomaswhitwell123@gmail.com'
+my_email = '****'
 msg = MIMEMultipart('alternative')
 msg['Subject'] = subject
 msg['From'] = f'{my_email}'
-msg['To'] = 'thomaswhitwell1@gmail.com'
+msg['To'] = '****'
 msgPlain = plain
 msgHtml = html
 msg.attach(MIMEText(msgPlain, 'plain'))
